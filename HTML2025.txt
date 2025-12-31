@@ -1,0 +1,33 @@
+class Potato {
+    String name;
+    int pricePerKg;
+
+    Potato(String name, int pricePerKg) {
+        this.name = name;
+        this.pricePerKg = pricePerKg;
+    }
+
+    void display() {
+        System.out.println(name + " - Rs " + pricePerKg + " per kg");
+    }
+}
+
+public class PatraPotatoStore {
+
+    public static void main(String[] args) {
+
+        Potato hemangini = new Potato("Hemangini Potato", 19);
+        Potato chandramukhi = new Potato("Chandramukhi Potato", 17);
+
+        System.out.println("Welcome to PATRA GROUPS PRIVATE L.T.D");
+        System.out.println("Address: Parshyampur, Hooghly, West Bengal - 712401");
+        System.out.println("Phone: 03212-795567");
+        System.out.println("\nAvailable Potatoes:\n");
+
+        hemangini.display();
+        chandramukhi.display();
+
+        System.out.println("\nThank you for buying fresh potatoes!");
+    }
+}
+
